@@ -38,7 +38,7 @@ var PLATFORM = {
       'google-services.json',
       ANDROID_DIR + '/assets/www/google-services.json',
       'www/google-services.json',
-      ANDROID_DIR + '/app/src/main/google-services.json'
+      ANDROID_DIR + '/google-services.json'
     ],
   }
 };
