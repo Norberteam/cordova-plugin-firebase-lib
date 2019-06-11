@@ -15,7 +15,7 @@ var config = fs.readFileSync('config.xml').toString();
 var name = utilities.getValue(config, 'name');
 
 var IOS_DIR = 'platforms/ios';
-var ANDROID_DIR = 'platforms/android/app/src/main';
+var ANDROID_DIR = 'platforms/android';
 
 var PLATFORM = {
   IOS: {
@@ -36,9 +36,9 @@ var PLATFORM = {
     ],
     src: [
       'google-services.json',
-      ANDROID_DIR + '/assets/www/google-services.json',
+      ANDROID_DIR + '/app/src/main/assets/www/google-services.json',
       'www/google-services.json',
-      ANDROID_DIR + '/google-services.json'
+      ANDROID_DIR + '/app/src/main/google-services.json'
     ],
   }
 };
